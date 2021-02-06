@@ -1,0 +1,29 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/node_modules": true,
+        "**/yarn-lock.json": true,
+        "**/yarn-error.log": true,
+        "**/output": true
+    },
+    // "editor.rulers": [40],
+    "editor.formatOnSave": false,
+    "editor.formatOnType": false,
+    "editor.quickSuggestions": false,
+    "editor.suggestOnTriggerCharacters": false,
+    "editor.parameterHints.enabled": false,
+    "extensions.ignoreRecommendations": true,
+    "editor.hover.enabled": false,
+    "eslint.run": "onSave",
+    "eslint.validate": ["javascript"],
+    "eslint.packageManager": "yarn",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "editor.minimap.enabled": false,
+    "debug.openDebug": "neverOpen",
+}

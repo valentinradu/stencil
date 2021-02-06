@@ -1,0 +1,14 @@
+<mjml>
+  <mj-head>
+    {{> head}}
+  </mj-head>
+  <mj-body>
+    <mj-section background-color="#f0f0f0">
+      <mj-column>
+        <mj-text font-size="28px" font-weight="500">
+          {{greeting}}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

@@ -1,0 +1,22 @@
+{
+  "name": "stencil",
+  "version": "0.0.1",
+  "description": "Customizable transactional and marketing email templates",
+  "main": "index.js",
+  "repository": "https://github.com/valentinradu/stencil.git",
+  "author": "Valentin Radu",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev:welcome": "./dev.sh welcome"
+  },
+  "dependencies": {
+    "mjml": "^4.8.1",
+    "mustache": "^4.1.0"
+  },
+  "devDependencies": {
+    "chokidar-cli": "^2.1.0",
+    "eslint": "^7.17.0",
+    "eslint-plugin-import": "^2.22.1"
+  }
+}

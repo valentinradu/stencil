@@ -1,0 +1,23 @@
+{{#title}}
+  <mj-title>{{title}}</mj-title>
+{{/title}}
+{{#preview}}
+  <mj-preview>{{title}}</mj-preview>
+{{/preview}}
+{{#font}}
+  <mj-font name="{{font.name}}" href="{{font.url}}" />
+{{/font}}
+<mj-attributes>
+  <mj-text padding="0" />
+  {{#theme.dark}}
+    <mj-body background-color="black" />
+    <mj-class name="text" color="gray" />
+  {{/theme.dark}}
+  {{^theme.dark}}
+    <mj-body background-color="#E9EAEB" />
+    <mj-class name="text" color="red" />
+    {{/theme.dark}}
+    {{#font}}
+      <mj-all font-family="{{font.name}}" />
+    {{/font}}
+</mj-attributes>
