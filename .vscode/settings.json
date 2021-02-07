@@ -26,4 +26,5 @@
     },
     "editor.minimap.enabled": false,
     "debug.openDebug": "neverOpen",
+    "xml.validation.enabled": false
 }

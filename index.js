@@ -7,13 +7,15 @@ class Stencil {
     constructor(template) {
         this.template = this.templateByName(template)
         this.head = this.templateByName('head')
+        this.header = this.templateByName('header')
     }
 
     render(view) {
         return mustache.render(
             this.template, view, 
             {
-                head: this.head
+                head: this.head,
+                header: this.header
             },
             {
                 escape: value => value

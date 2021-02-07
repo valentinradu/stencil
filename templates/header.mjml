@@ -1,0 +1,43 @@
+<mj-section background-color="{{theme.header}}">
+    {{#header.logo}}
+    <mj-column>
+        <mj-spacer height="28px" />
+        <mj-image
+                align="{{layout.align}}"
+                width="{{header.logo.width}}"
+                height="{{header.logo.height}}"
+                src="{{header.logo.src}}" />
+    </mj-column>
+    {{/header.logo}}
+</mj-section>
+<mj-section background-color="{{theme.header}}">
+    <mj-column>
+        {{^header.logo}}
+        <mj-spacer height="28px" />
+        {{/header.logo}}
+        <mj-text
+                font-size="28px"
+                font-weight="500"
+                color="{{theme.textHeavy}}">
+            {{header.greeting}}
+        </mj-text>
+        <mj-spacer height="16px" />
+        <mj-text
+                font-size="16px"
+                line-height="22px">
+            {{header.message}}
+        </mj-text>
+        {{#header.button}}
+        <mj-spacer height="16px" />
+        <mj-button
+                inner-padding="12px 16px"
+                align="{{layout.align}}"
+                color="{{theme.label}}"
+                background-color="{{theme.button}}"
+                href="{{header.button.href}}"
+                font-size="16px">
+                {{header.button.label}}
+        </mj-button>
+        {{/header.button}}
+    </mj-column>
+</mj-section>
