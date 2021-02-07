@@ -9,8 +9,7 @@
                 src="{{header.logo.src}}" />
     </mj-column>
     {{/header.logo}}
-</mj-section>
-<mj-section background-color="{{theme.header}}">
+</mj-section><mj-section background-color="{{theme.header}}">
     <mj-column>
         {{^header.logo}}
         <mj-spacer height="28px" />
