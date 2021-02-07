@@ -1,11 +1,41 @@
 <mjml>
-  {{> head}}
+  <mj-head>
+    {{> head}}
+  </mj-head>
   <mj-body>
-    <mj-wrapper padding="32px 32px">
+    <mj-wrapper css-class="wrapper">
       {{> header}}
-      <mj-section background-color="{{theme.paper}}">
-        
+      <mj-section>
+        <mj-column>
+          <mj-spacer height="28px" />
+          <mj-text
+              color="{{theme.textHeavy}}"
+              font-size="20px"
+              font-weight="500">
+            {{steps.title}}
+          </mj-text>
+        </mj-column>
       </mj-section>
+      {{#steps.items}}
+      <mj-section>
+        <mj-column>
+          <mj-table>
+            <tr>
+              <td style="width: {{icon.width}};vertical-align: top">
+                <img
+                    width="{{icon.width}}"
+                    height="{{icon.height}}"
+                    src="{{icon.src}}" />
+              </td>
+              <td style="padding-left: 16px; color: {{theme.text}}; font-size: 16px">
+                {{description}}
+              </td>
+            </tr>
+          </mj-table>
+        </mj-column>
+      </mj-section>
+      {{/steps.items}}
+      {{> footer}}
     </mj-wrapper>
   </mj-body>
 </mjml>

@@ -1,42 +1,42 @@
 <mj-section background-color="{{theme.header}}">
-    {{#header.logo}}
-    <mj-column>
-        <mj-spacer height="28px" />
-        <mj-image
-                align="{{layout.align}}"
-                width="{{header.logo.width}}"
-                height="{{header.logo.height}}"
-                src="{{header.logo.src}}" />
-    </mj-column>
-    {{/header.logo}}
-</mj-section><mj-section background-color="{{theme.header}}">
-    <mj-column>
-        {{^header.logo}}
-        <mj-spacer height="28px" />
-        {{/header.logo}}
-        <mj-text
-                font-size="28px"
-                font-weight="500"
-                color="{{theme.textHeavy}}">
-            {{header.greeting}}
+  {{#logo}}
+  <mj-column>
+    <mj-spacer height="28px" />
+    <mj-image
+        align="{{layout.align}}"
+        width="{{logo.width}}"
+        height="{{logo.height}}"
+        src="{{logo.src}}" />
+  </mj-column>
+  {{/logo}}
+</mj-section>
+
+<mj-section background-color="{{theme.header}}">
+  <mj-column>
+    <mj-spacer height="28px" />
+    <mj-text
+        font-size="28px"
+        font-weight="500"
+        color="{{theme.textHeavy}}">
+            {{greeting}}
         </mj-text>
-        <mj-spacer height="16px" />
-        <mj-text
-                font-size="16px"
-                line-height="22px">
-            {{header.message}}
+    <mj-spacer height="16px" />
+    <mj-text
+        font-size="16px">
+            {{message}}
         </mj-text>
-        {{#header.button}}
-        <mj-spacer height="16px" />
-        <mj-button
-                inner-padding="12px 16px"
-                align="{{layout.align}}"
-                color="{{theme.label}}"
-                background-color="{{theme.button}}"
-                href="{{header.button.href}}"
-                font-size="16px">
-                {{header.button.label}}
+    {{#action}}
+    <mj-spacer height="16px" />
+    <mj-button
+        inner-padding="12px 16px"
+        align="{{layout.align}}"
+        color="{{theme.label}}"
+        background-color="{{theme.button}}"
+        href="{{action.href}}"
+        font-size="16px">
+                {{action.label}}
         </mj-button>
-        {{/header.button}}
-    </mj-column>
+    {{/action}}
+    <mj-spacer height="28px" />
+  </mj-column>
 </mj-section>

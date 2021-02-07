@@ -1,29 +1,58 @@
-<mj-head>
-  {{#title}}
-  <mj-title>{{title}}</mj-title>
-  {{/title}}
-  {{#preview}}
-  <mj-preview>{{title}}</mj-preview>
-  {{/preview}}
+{{#title}}
+<mj-title>{{title}}</mj-title>
+{{/title}}
+
+{{#preview}}
+<mj-preview>{{title}}</mj-preview>
+{{/preview}}
+
+{{#font}}
+<mj-font
+    name="{{font.name}}"
+    href="{{font.url}}" />
+{{/font}}
+
+<mj-style>
+  a {
+    color: {{theme.link}};
+    font-weight: 500;
+  }
+  .wrapper {
+    padding: 32px;
+  }
+  .social-icon {
+    display: inline-block;
+    padding: 0 20px;
+  }
+  @media (max-width: 414px) {
+    .wrapper {
+      padding: 0;
+    }
+    .social-icon {
+      display: inline-block;
+      padding: 0 8px;
+    }
+  }
+</mj-style>
+
+<mj-attributes>
+  <mj-text
+      padding="0"
+      color="{{theme.text}}" 
+      line-height="150%" />
+  <mj-breakpoint width="414px" />
+  <mj-image padding="0" />
+  <mj-button padding="0" />
+  <mj-section
+      padding="12px 32px"
+      background-color="{{theme.paper}}" />
+  <mj-wrapper padding="0" />
+  <mj-table padding="0" />
+  <mj-body background-color="{{theme.body}}" />
+  <mj-class
+      name="text"
+      color="red" />
   {{#font}}
-  <mj-font
-      name="{{font.name}}"
-      href="{{font.url}}" />
+  <mj-all font-family="{{font.name}}" />
   {{/font}}
-  <mj-attributes>
-    <mj-text
-        padding="0"
-        color="{{theme.text}}" />
-    <mj-image padding="0" />
-    <mj-button padding="0" />
-    <mj-section padding="28px 32px" />
-    <mj-wrapper padding="0" />
-    <mj-body background-color="{{theme.body}}" />
-    <mj-class
-        name="text"
-        color="red" />
-    {{#font}}
-    <mj-all font-family="{{font.name}}" />
-    {{/font}}
-  </mj-attributes>
-</mj-head>
+</mj-attributes>

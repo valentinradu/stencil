@@ -1,0 +1,43 @@
+<mj-section padding="12px 12px">
+  <mj-column>
+    <mj-spacer height="64px" />
+    <mj-text align="center">
+      {{#social}}
+      <a
+          href="{{href}}"
+          class="social-icon">
+        <img
+            width="{{icon.width}}"
+            height="{{icon.height}}"
+            src="{{icon.src}}" />
+      </a>
+      {{/social}}
+    </mj-text>
+  </mj-column>
+</mj-section>
+
+<mj-section>
+  <mj-column>
+    {{#address}}
+    <mj-text
+        font-size="16px"
+        align="center">
+        {{address.firstLine}}
+    </mj-text>
+    <mj-text
+        font-size="16px"
+        align="center">
+        {{address.secondLine}}
+    </mj-text>
+    {{/address}}
+    {{#unsubscribe}}
+    <mj-spacer height="128px" />
+    <mj-text
+        font-size="12px"
+        align="center">
+        {{unsubscribe}}
+    </mj-text>
+    {{/unsubscribe}}
+    <mj-spacer height="32px" />
+  </mj-column>
+</mj-section>

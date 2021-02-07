@@ -8,6 +8,7 @@ class Stencil {
         this.template = this.templateByName(template)
         this.head = this.templateByName('head')
         this.header = this.templateByName('header')
+        this.footer = this.templateByName('footer')
     }
 
     render(view) {
@@ -15,7 +16,8 @@ class Stencil {
             this.template, view, 
             {
                 head: this.head,
-                header: this.header
+                header: this.header,
+                footer: this.footer
             },
             {
                 escape: value => value
