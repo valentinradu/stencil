@@ -12,9 +12,8 @@ const view = {
     },
     heading: "Here comes the code!",
     message: "Your confirmation code is here 💪🏼! Copy and paste it into the form to complete the email verification process.",
-    unsubscribe: "We dislike span as much as everybody else. If you don’t want to receive our emails anymore, <a href=\"https://localhost\">unsubscribe here</a>.",
-    code: "334985"
+    unsubscribe: "We dislike span as much as everybody else. If you don’t want to receive our emails anymore, <a href=\"https://localhost\">unsubscribe here</a>."
 }
 
-const stencil = new Stencil("confirmation")
+const stencil = new Stencil("cart")
 console.log(stencil.render(view))

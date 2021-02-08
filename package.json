@@ -10,7 +10,8 @@
   "scripts": {
     "dev:welcome": "./dev.sh welcome",
     "dev:transactional": "./dev.sh transactional",
-    "dev:confirmation": "./dev.sh confirmation"
+    "dev:cart": "./dev.sh cart",
+    "dev:newsletter": "./dev.sh newsletter"
   },
   "dependencies": {
     "mjml": "^4.8.1",

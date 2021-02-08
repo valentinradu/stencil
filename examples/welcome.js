@@ -51,77 +51,39 @@ const view = {
     },
     social: [
         {
-            icon: {
-                src: `${repoUrl}/twitter.png`,
-                width: "25px",
-                height: "20px"
-            },
+            name: 'twitter',
             href: "https://twitter.com"
         },
         {
-            icon: {
-                src: `${repoUrl}/facebook.png`,
-                width: "11px",
-                height: "20px"
-            },
+            name: 'facebook',
             href: "https://facebook.com"
         },
         {
-            icon: {
-                src: `${repoUrl}/instagram.png`,
-                width: "20px",
-                height: "20px"
-            },
+            name: 'instagram',
             href: "https://instagram.com"
         },
         {
-            icon: {
-                src: `${repoUrl}/pinterest.png`,
-                width: "19px",
-                height: "20px"
-            },
+            name: 'pinterest',
             href: "https://pinterest.com"
         },
         {
-            icon: {
-                src: `${repoUrl}/tiktok.png`,
-                width: "18px",
-                height: "20px"
-            },
+            name: 'tiktok',
             href: "https://tiktok.com"
         },
         {
-            icon: {
-                src: `${repoUrl}/whatsapp.png`,
-                width: "20px",
-                height: "20px"
-            },
+            name: 'whatsapp',
             href: "https://whatsapp.com"
         },
         {
-            icon: {
-                src: `${repoUrl}/youtube.png`,
-                width: "29px",
-                height: "20px",
-                href: "https://youtube.com"
-            }
+            name: 'youtube',
+            href: "https://youtube.com"
         }
     ],
     address: {
         firstLine: "Bohemian Inc, 221B Baker Street",
         secondLine: "London, United Kingdom"
     },
-    unsubscribe: "We dislike span as much as everybody else. If you don’t want to receive our emails anymore, <a href=\"https://localhost\">unsubscribe here</a>.",
-    theme: {
-        body: '#E9EAEB',
-        header: '#F7F7F7',
-        paper: 'white',
-        text: '#5C5A52',
-        textHeavy: '#221E12',
-        label: "white",
-        button: "#7870FA",
-        link: "#7870FA"
-    }
+    unsubscribe: "We dislike span as much as everybody else. If you don’t want to receive our emails anymore, <a href=\"https://localhost\">unsubscribe here</a>."
 }
 
 const stencil = new Stencil("welcome")

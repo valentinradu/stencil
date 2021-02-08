@@ -5,6 +5,7 @@
   <mj-body>
     <mj-wrapper css-class="wrapper">
       {{> header}}
+      {{#steps.title}}
       <mj-section>
         <mj-column>
           <mj-spacer height="28px" />
@@ -16,6 +17,7 @@
           </mj-text>
         </mj-column>
       </mj-section>
+      {{/steps.title}}
       {{#steps.items}}
       <mj-section>
         <mj-column>
