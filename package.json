@@ -8,7 +8,9 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "dev:welcome": "./dev.sh welcome"
+    "dev:welcome": "./dev.sh welcome",
+    "dev:transactional": "./dev.sh transactional",
+    "dev:confirmation": "./dev.sh confirmation"
   },
   "dependencies": {
     "mjml": "^4.8.1",

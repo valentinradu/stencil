@@ -3,7 +3,7 @@
   <mj-column>
     <mj-spacer height="28px" />
     <mj-image
-        align="{{layout.align}}"
+        align="left"
         width="{{logo.width}}"
         height="{{logo.height}}"
         src="{{logo.src}}" />
@@ -18,7 +18,7 @@
         font-size="28px"
         font-weight="500"
         color="{{theme.textHeavy}}">
-            {{greeting}}
+            {{heading}}
         </mj-text>
     <mj-spacer height="16px" />
     <mj-text
@@ -29,7 +29,7 @@
     <mj-spacer height="16px" />
     <mj-button
         inner-padding="12px 16px"
-        align="{{layout.align}}"
+        align="left"
         color="{{theme.label}}"
         background-color="{{theme.button}}"
         href="{{action.href}}"

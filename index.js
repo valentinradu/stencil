@@ -12,8 +12,32 @@ class Stencil {
     }
 
     render(view) {
+        const defaultView = view
+
+        if (defaultView) {
+            defaultView.theme = {
+                body: '#E9EAEB',
+                header: '#F7F7F7',
+                paper: 'white',
+                text: '#5C5A52',
+                textHeavy: '#221E12',
+                label: 'white',
+                button: '#7870FA',
+                link: '#7870FA',
+                codebg: '#E6E6E8',
+                ...defaultView.theme
+            }
+            if (defaultView.logo) {
+                defaultView.logo = {
+                    width: '120px',
+                    height: 'auto',
+                    ...defaultView.logo
+                }
+            }
+        }
+
         return mustache.render(
-            this.template, view, 
+            this.template, defaultView, 
             {
                 head: this.head,
                 header: this.header,

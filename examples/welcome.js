@@ -16,9 +16,9 @@ const view = {
     },
     action: {
         label: "GET STARTED",
-        href: "https://google.com"
+        href: "https://localhost"
     },
-    greeting: "Welcome, Jane! 🎉",
+    heading: "Welcome, Jane! 🎉",
     message: "We’re happy to have you on board. You’re now part of a community that connects developers across the world. Meet others. Tell us your story. Learn something new.",
     steps: {
         title: "The next steps",
@@ -111,7 +111,7 @@ const view = {
         firstLine: "Bohemian Inc, 221B Baker Street",
         secondLine: "London, United Kingdom"
     },
-    unsubscribe: "We dislike span as much as everybody else. If you don’t want to receive our emails anymore, <a href=\"https://google.com\">unsubscribe here</a>.",
+    unsubscribe: "We dislike span as much as everybody else. If you don’t want to receive our emails anymore, <a href=\"https://localhost\">unsubscribe here</a>.",
     theme: {
         body: '#E9EAEB',
         header: '#F7F7F7',
@@ -121,9 +121,6 @@ const view = {
         label: "white",
         button: "#7870FA",
         link: "#7870FA"
-    },
-    layout: {
-        align: 'left'
     }
 }
 

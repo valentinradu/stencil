@@ -1,0 +1,28 @@
+<mjml>
+  <mj-head>
+    {{> head}}
+  </mj-head>
+  <mj-body>
+    <mj-wrapper css-class="wrapper">
+      {{> header}}
+      <mj-section background-color="{{theme.header}}">
+        <mj-column
+            width="200px"
+            background-color="{{theme.codebg}}">
+          <mj-text
+              align="center"
+              font-size="28px"
+              font-weight="500">
+            {{code}}
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section background-color="{{theme.header}}">
+        <mj-column>
+          <mj-spacer />
+        </mj-column>
+      </mj-section>
+      {{> footer}}
+    </mj-wrapper>
+  </mj-body>
+</mjml>
