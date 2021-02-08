@@ -5,6 +5,7 @@
   <mj-body>
     <mj-wrapper css-class="wrapper">
       {{> header}}
+      
       {{> footer}}
     </mj-wrapper>
   </mj-body>

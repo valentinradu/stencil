@@ -1,8 +1,5 @@
-const Stencil = require('../index')
-
-
 const repoUrl = "https://raw.githubusercontent.com/valentinradu/stencil/master/assets"
-const view = {
+module.exports = {
     font: {
         name: "Roboto",
         url: "https://fonts.googleapis.com/css?family=Roboto:300,400,500"
@@ -15,6 +12,3 @@ const view = {
     unsubscribe: "We dislike span as much as everybody else. If you don’t want to receive our emails anymore, <a href=\"https://localhost\">unsubscribe here</a>.",
     code: "334985"
 }
-
-const stencil = new Stencil("confirmation")
-console.log(stencil.render(view))

@@ -18,18 +18,20 @@
 
 <mj-section>
   <mj-column>
-    {{#address}}
+    {{#businessAddress.firstLine}}
     <mj-text
         font-size="16px"
         align="center">
-        {{address.firstLine}}
+        {{businessAddress.firstLine}}
     </mj-text>
+    {{/businessAddress.firstLine}}
+    {{#businessAddress.secondLine}}
     <mj-text
         font-size="16px"
         align="center">
-        {{address.secondLine}}
+        {{businessAddress.secondLine}}
     </mj-text>
-    {{/address}}
+    {{/businessAddress.secondLine}}
     {{#unsubscribe}}
     <mj-spacer height="128px" />
     <mj-text

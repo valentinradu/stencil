@@ -13,7 +13,15 @@
 
 <mj-section background-color="{{theme.header}}">
   <mj-column>
+    {{#banner}}
+    <mj-image
+        align="center"
+        width="{{banner.width}}"
+        height="{{banner.height}}"
+        src="{{banner.src}}" />
+    {{/banner}}
     <mj-spacer height="28px" />
+    {{#heading}}
     <mj-text
         font-size="28px"
         font-weight="500"
@@ -21,10 +29,13 @@
             {{heading}}
         </mj-text>
     <mj-spacer height="16px" />
+    {{/heading}}
+    {{#message}}
     <mj-text
         font-size="16px">
             {{message}}
-        </mj-text>
+    </mj-text>
+    {{/message}}
     {{#action}}
     <mj-spacer height="16px" />
     <mj-button

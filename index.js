@@ -2,6 +2,7 @@ const mjml = require('mjml')
 const mustache = require('mustache')
 const fs = require('fs')
 
+
 const repoUrl = "https://raw.githubusercontent.com/valentinradu/stencil/master/assets"
 const icons = {
     twitter: {
@@ -72,6 +73,13 @@ class Stencil {
                     ...defaultView.logo
                 }
             }
+            if (defaultView.banner) {
+                defaultView.banner = {
+                    width: '600px',
+                    height: 'auto',
+                    ...defaultView.banner
+                }
+            }
             if (defaultView.steps && defaultView.steps.items) {
                 defaultView.steps = defaultView.steps.items
                     .map(r => {
@@ -108,7 +116,7 @@ class Stencil {
             }
         }
 
-        return mustache.render(
+        const {html, errors} = mjml(mustache.render(
             this.template, defaultView, 
             {
                 head: this.head,
@@ -118,7 +126,13 @@ class Stencil {
             {
                 escape: value => value
             }
-        )
+        ))
+
+        if (errors.length > 0) {
+            throw new Error(errors.join('/n'))
+        }
+
+        return html
     }
 
     templateByName(name) {

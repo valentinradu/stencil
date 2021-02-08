@@ -1,8 +1,5 @@
-const Stencil = require('../index')
-
-
 const repoUrl = "https://raw.githubusercontent.com/valentinradu/stencil/master/assets"
-const view = {
+module.exports = {
     preview: "Forgot your password?",
     font: {
         name: "Roboto",
@@ -44,12 +41,9 @@ const view = {
             href: "https://instagram.com"
         }
     ],
-    address: {
+    businessAddress: {
         firstLine: "Bohemian Inc, 221B Baker Street",
         secondLine: "London, United Kingdom"
     },
     unsubscribe: "We dislike span as much as everybody else. If you don’t want to receive our emails anymore, <a href=\"https://localhost\">unsubscribe here</a>."
 }
-
-const stencil = new Stencil("transactional")
-console.log(stencil.render(view))
