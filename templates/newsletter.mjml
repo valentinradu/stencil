@@ -5,7 +5,51 @@
   <mj-body>
     <mj-wrapper css-class="wrapper">
       {{> header}}
-      
+      <mj-section>
+        <mj-column>
+          <mj-spacer height="16px" />
+        </mj-column>
+      </mj-section>
+      {{#articles}}
+      <mj-section text-align="left">
+        <mj-column width="33%" padding="20px">
+          <mj-image
+              width="{{icon.width}}"
+              height="{{icon.height}}"
+              src="{{icon.src}}" />
+        </mj-column>
+        <mj-column width="66%">
+          <mj-text
+              font-size="20px"
+              font-weight="500"
+              color="{{theme.textHeavy}}">
+            {{title}}
+          </mj-text>
+          <mj-text font-size="14px">
+            {{subtitle}}
+          </mj-text>
+          <mj-spacer height="16px"/>
+          <mj-text>
+            {{preview}}
+          </mj-text>
+          <mj-spacer height="16px"/>
+          <mj-button
+              inner-padding="12px 16px"
+              align="left"
+              color="{{theme.label}}"
+              background-color="{{theme.button}}"
+              href="{{action.href}}"
+              font-size="16px">
+                {{action.label}}
+        </mj-button>
+        </mj-column>
+      </mj-section>
+      <mj-section>
+        <mj-column>
+          <mj-spacer height="16px" />
+        </mj-column>
+      </mj-section>
+      {{/articles}}
       {{> footer}}
     </mj-wrapper>
   </mj-body>

@@ -29,8 +29,10 @@
                     height="{{icon.height}}"
                     src="{{icon.src}}" />
               </td>
-              <td style="padding-left: 16px; color: {{theme.text}}; font-size: 16px">
-                {{description}}
+              <td style="padding-left: 16px;">
+                <span style="color: {{theme.text}}; font-size: 16px">
+                  {{description}}
+                </span>
               </td>
             </tr>
           </mj-table>

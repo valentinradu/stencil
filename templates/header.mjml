@@ -45,7 +45,7 @@
         background-color="{{theme.button}}"
         href="{{action.href}}"
         font-size="16px">
-                {{action.label}}
+          {{action.label}}
         </mj-button>
     {{/action}}
     <mj-spacer height="28px" />

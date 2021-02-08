@@ -50,7 +50,8 @@ function stencil(name) {
     const stencil = new Stencil(name)
 
     try {
-        const html = stencil.render(views[name])
+        const view = views[name]
+        const html = stencil.render(view)
         return html
     }
     catch (error) {

@@ -80,8 +80,21 @@ class Stencil {
                     ...defaultView.banner
                 }
             }
+            if (defaultView.articles) {
+                defaultView.articles = defaultView.articles
+                    .map(r => {
+                        return {
+                            ...r,
+                            icon: {
+                                width: '80px',
+                                height: 'auto',
+                                ...r.icon
+                            }
+                        }
+                    })
+            }
             if (defaultView.steps && defaultView.steps.items) {
-                defaultView.steps = defaultView.steps.items
+                defaultView.steps.items = defaultView.steps.items
                     .map(r => {
                         return {
                             ...r,
@@ -116,7 +129,7 @@ class Stencil {
             }
         }
 
-        const {html, errors} = mjml(mustache.render(
+        const template = mustache.render(
             this.template, defaultView, 
             {
                 head: this.head,
@@ -126,10 +139,11 @@ class Stencil {
             {
                 escape: value => value
             }
-        ))
+        )
+        const {html, errors} = mjml(template)
 
         if (errors.length > 0) {
-            throw new Error(errors.join('/n'))
+            throw new Error(errors.map(r => r.formattedMessage))
         }
 
         return html
