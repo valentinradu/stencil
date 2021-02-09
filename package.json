@@ -1,11 +1,16 @@
 {
-  "name": "stencil",
+  "name": "@radval/stencil",
   "version": "0.0.1",
   "description": "Customizable transactional and marketing email templates",
   "main": "index.js",
   "repository": "https://github.com/valentinradu/stencil.git",
   "author": "Valentin Radu",
   "license": "MIT",
+  "bugs": "https://github.com/valentinradu/stencil/issues",
+  "homepage": "stencil.email",
+  "keywords": [
+    "email", "template", "nodejs"
+  ],
   "private": false,
   "scripts": {
     "cli": "yarn node ./cli/index.js",

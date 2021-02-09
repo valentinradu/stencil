@@ -5,6 +5,7 @@
   <mj-body>
     <mj-wrapper css-class="wrapper">
       {{> header}}
+      {{#code}}
       <mj-section background-color="{{theme.header}}">
         <mj-column
             width="200px"
@@ -17,6 +18,7 @@
           </mj-text>
         </mj-column>
       </mj-section>
+      {{/code}}
       <mj-section background-color="{{theme.header}}">
         <mj-column>
           <mj-spacer />
