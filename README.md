@@ -34,7 +34,7 @@ const html = stencil.render({
 Each `stencil` email has the same structure: header, body, footer. 
 The header has a logo, heading (title), message and an action button. The footer contains social media links, the business address and the unsubscribe message.
 
-Check out [stencil.email](https://stencil.email) to see how each template looks!
+Check out [stencil.email](https://stencil.email) to see how templates look! Alternatively you can use the `.sketch` file here.
 
 
 There are 4 body categories:
