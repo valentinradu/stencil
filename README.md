@@ -1,4 +1,4 @@
-<p align="center"><img width=60% src="https://raw.githubusercontent.com/valentinradu/stencil/master/assets/githublogo.svg"></p>
+<p align="center"><img width=60% src="https://raw.githubusercontent.com/valentinradu/stencil/master/assets/github-logo.svg"></p>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 ![Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-yellowgreen.svg)
