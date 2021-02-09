@@ -1,6 +1,6 @@
-<p align="center"><img width=60% src="https://raw.githubusercontent.com/valentinradu/stencil/master/assets/github-logo.svg"></p>
+<p align="left"><img width=60% src="https://raw.githubusercontent.com/valentinradu/stencil/master/assets/github-logo.svg"></p>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
 ![Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-yellowgreen.svg)
 [![GitHub Issues](https://img.shields.io/github/issues/valentinradu/stencil.svg)](https://github.com/valentinradu/stencil/issues)
 ![Contributions welcome](https://img.shields.io/badge/contributions-welcome-blueviolet.svg)
