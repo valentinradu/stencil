@@ -61,14 +61,14 @@ Sent directly to the `render` method.
 | :---------------- | :------------------------------------------------ | :---------------------- |
 | `title`           | The title that shows up in web browsers tab       | string                  |
 | `preview`         | The preview that shows up in email clients lists  | string                  |
-| `font`            | The global font                                   | [font](font)            |
-| `logo`            | The logo                                          | [image](image)          |
-| `banner`          | A image banner appearing under the logo           | [image](image)          |
-| `action`          | The header main button's action                   | [action](image)         |
+| `font`            | The global font                                   | [font](#font)            |
+| `logo`            | The logo                                          | [image](#image)          |
+| `banner`          | A image banner appearing under the logo           | [image](#image)          |
+| `action`          | The header main button's action                   | [action](#image)         |
 | `heading`         | The header's title                                | string/html             |
 | `message`         | The header's message                              | string/html             |
-| `social`          | The footer's social media links                   | array<[social](social)> |
-| `businessAddress` | The business address below the social media links | [address](address)      |
+| `social`          | The footer's social media links                   | array<[social](#social)> |
+| `businessAddress` | The business address below the social media links | [address](#address)      |
 | `unsubscribe`     | The unsubscribe message                           | string/html             |
 
 
@@ -76,7 +76,7 @@ Sent directly to the `render` method.
 
 | Name    | Description               | Type           |
 | :------ | :------------------------ | :------------- |
-| `steps` | A todo or next steps list | [steps](steps) |
+| `steps` | A todo or next steps list | [steps](#steps) |
 
 ### Confirmation
 
@@ -88,7 +88,7 @@ Sent directly to the `render` method.
 
 | Name       | Description        | Type                       |
 | :--------- | :----------------- | :------------------------- |
-| `articles` | A list of articles | array<[article](articles)> |
+| `articles` | A list of articles | array<[article](#articles)> |
 
 ## Objects
 These are used by the view's properties (see above)
@@ -135,22 +135,22 @@ These are used by the view's properties (see above)
 | Name    | Description              | Type                        |
 | :------ | :----------------------- | :-------------------------- |
 | `title` | The title above the list | string/html                 |
-| `items` | List items               | array<[steps-item](social)> |
+| `items` | List items               | array<[steps-item](#social)> |
 
 ### Steps item
 
 | Name          | Description          | Type           |
 | :------------ | :------------------- | :------------- |
-| `icon`        | The item icon        | [image](image) |
+| `icon`        | The item icon        | [image](#image) |
 | `description` | The item description | string/html    |
 
 ### Article
 
 | Name       | Description               | Type             |
 | :--------- | :------------------------ | :--------------- |
-| `icon`     | The article icon          | [image](image)   |
+| `icon`     | The article icon          | [image](#image)   |
 | `title`    | The article title         | string/html      |
 | `subtitle` | The article subtitle      | string/html      |
 | `preview`  | The article short preview | string/html      |
-| `action`   | The item description      | [action](action) |
+| `action`   | The item description      | [action](#action) |
 
